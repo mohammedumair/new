@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body background = "image2.jpg">
+<h4><u>Enter age </u></h4><input id = "age" type = "text" placeholder = "age"> <br>
+<h4> <u> Enter the amount per day</u> </h4> <input id = "amount" type = "text" placeholder = "amount"><br>
+<button onclick="getTotal()"> submit</button>
+<script type="text/javascript">
+function getTotal(){
+	var a = document.getElementById('age').value;
+	var amt = document.getElementById('amount').value;
+	
+	var rest = 100 - parseInt(a);
+	
+	var total = rest * amt * 365  ;
+	if(!isNaN(total))
+	{
+		document.getElementById("answer").innerHTML=" the amount consumed for rest of the life is Rs" + total;
+	}
+}
+
+</script>
+<h1 id = "answer"></h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+</head>
+<body background = "image2.jpg">
+<h4><u>Enter birth day </u></h4><input id = "birthYear" type = "text" placeholder = "birth"> <br>
+<h4> <u> Enter the amount per day</u> </h4> <input id = "currentYear" type = "text" placeholder = "current"><br>
+<button onclick="getAge()"> submit</button>
+<script>
+function getAge(){
+	var birth = document.getElementById('birthYear').value;
+	var current = document.getElementById('currentYear').value;
+	
+	var age = parseInt(current) - parseInt(birth);
+	if(!isNaN(age))
+	{
+		document.getElementById("answer").innerHTML=" your age is " + age;
+	}
+}
+
+</script>
+<h1 id = "answer"></h1>
+</body>
+</html>

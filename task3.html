@@ -1,0 +1,18 @@
+<html>
+<head>
+<title></title>
+</head>
+<body background="image3.jpg" >
+<center> <h4><i> Enter the radius </i></h3><input id = "radius" type = "text" ><br>
+<button onclick="getCir()"> submit</button></center>
+<script type="text/javascript">
+function getCir(){
+var area,r,pi;
+pi =3.14;
+r = document.getElementById("radius").value;
+area = pi*r*r;
+document.write("the area is " + area);
+}
+</script>
+</body>
+</html>

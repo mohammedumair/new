@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+</head>
+<body background = "image2.jpg">
+<h3> farhenheit </h3><input id = "farhenheit" type = "text" >
+
+<button onclick = "getCel()">submit</button>
+
+<script type="text/javascript">
+function getCel(){
+
+var farhenheit1 = document.getElementById("farhenheit").value;
+var celsius1 = (farhenheit - 32) * (5/9);
+document.getElementById("celsius in").innerHTML=" farhenheit is " + farhenheit1;
+
+</script>
+<h1 id = "celsius " ></h1>
+
+</body>
+</html>
